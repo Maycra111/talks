@@ -1,0 +1,95 @@
+{
+  "name": "my-notes",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.4.1",
+  "author": "JinmingYang <2214962083@qq.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/2214962083",
+  "homepage": "https://github.com/2214962083/my-notes#readme",
+  "website": "https://my-notes.nicepkg.cn",
+  "issuesUrl": "https://github.com/2214962083/my-notes/issues/new",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2214962083/my-notes"
+  },
+  "bugs": {
+    "url": "https://github.com/2214962083/my-notes/issues"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/2214962083"
+  },
+  "scripts": {
+    "build": "rimraf dist && pnpm -r run build",
+    "commit": "git add . && cz",
+    "dev": "esno scripts/picker.ts dev --open",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "update": "esno scripts/redirects.ts",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@commitlint/cz-commitlint": "catalog:",
+    "@eslint-react/eslint-plugin": "catalog:",
+    "@eslint/config-inspector": "catalog:",
+    "@ianvs/prettier-plugin-sort-imports": "catalog:",
+    "@iconify/collections": "catalog:",
+    "@iconify/json": "catalog:",
+    "@slidev/cli": "catalog:",
+    "@slidev/client": "catalog:",
+    "@slidev/theme-default": "catalog:",
+    "@types/node": "catalog:",
+    "@types/prompts": "catalog:",
+    "@types/seedrandom": "catalog:",
+    "chroma-js": "catalog:",
+    "commitizen": "catalog:",
+    "cross-env": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-flat-gitignore": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-react-refresh": "catalog:",
+    "esno": "catalog:",
+    "execa": "catalog:",
+    "fast-glob": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "markdown-it-magic-link": "catalog:",
+    "playwright-chromium": "catalog:",
+    "pnpm": "catalog:",
+    "prettier-plugin-slidev": "catalog:",
+    "prompts": "catalog:",
+    "rimraf": "catalog:",
+    "seedrandom": "catalog:",
+    "slidev-addon-graph": "catalog:",
+    "taze": "catalog:",
+    "typescript": "catalog:",
+    "unocss": "catalog:",
+    "uqr": "catalog:",
+    "vis-data": "catalog:",
+    "vis-network": "catalog:",
+    "vite": "catalog:",
+    "vue-router": "catalog:",
+    "vue-tsc": "catalog:"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,json}": [
+      "eslint --fix --cache"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./cz-adapter.cjs"
+    }
+  }
+}
