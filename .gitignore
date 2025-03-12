@@ -26,3 +26,4 @@ docs/.vitepress/cache
 node_modules
 slides-export.md
 *slides-export.pptx
+**/public/assets/fonts
