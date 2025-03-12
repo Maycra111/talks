@@ -1,5 +1,5 @@
 {
-  "name": "my-notes",
+  "name": "talks",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -7,15 +7,15 @@
   "author": "JinmingYang <2214962083@qq.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/2214962083",
-  "homepage": "https://github.com/2214962083/my-notes#readme",
-  "website": "https://my-notes.nicepkg.cn",
-  "issuesUrl": "https://github.com/2214962083/my-notes/issues/new",
+  "homepage": "https://github.com/2214962083/talks#readme",
+  "website": "https://talks.nicepkg.cn",
+  "issuesUrl": "https://github.com/2214962083/talks/issues/new",
   "repository": {
     "type": "git",
-    "url": "https://github.com/2214962083/my-notes"
+    "url": "https://github.com/2214962083/talks"
   },
   "bugs": {
-    "url": "https://github.com/2214962083/my-notes/issues"
+    "url": "https://github.com/2214962083/talks/issues"
   },
   "sponsor": {
     "url": "https://github.com/sponsors/2214962083"
