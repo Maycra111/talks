@@ -250,23 +250,12 @@ layout: statement
 老板兴高采烈地走进你的办公室，一杯咖啡递给你...
 </div>
 
-<div class="text-3xl font-bold text-amber-500 mt-4">
- 老板："你的AI工具调用功能实现得太棒了！但我刚从会议上回来..."
-</div>
-
-<div class="max-w-2xl mx-auto mt-10 text-xl">
-  <div class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
-    老板："我们需要更多功能，让其他公司也能开发工具给我们用！就像App Store那样！"
-  </div>
-
-  <div class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
-    你："老板，我做不到啊！"
-  </div>
-
-   <div class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
-    老板："做完涨薪！"
-  </div>
-</div>
+<BossEmployeeChat :messages="[
+  { role: 'boss', content: '你的AI工具调用功能实现得太棒了！但我刚从会议上回来...' },
+  { role: 'boss', content: '投资人说我们需要更多功能，最好像 App store一样丰富' },
+  { role: 'employee', content: '老板，我做不到啊！' },
+  { role: 'boss', content: '做完涨薪！', type: 'warning' }
+]" />
 
 ---
 layout: statement
@@ -275,18 +264,18 @@ background: https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=forma
 
 # 涨薪？等等... 🤔
 
-<div class="text-xl mt-8">
+<div class="text-xl mt-8" v-click>
   能不能让别人帮我写 Function 呢？我专注开发聊天客户端就行，这样我就不用写那么多 Function 了。
 </div>
 
-<div class="text-3xl mt-8">
+<div class="text-3xl mt-8" v-click>
   巧了，OpenAI 也这么想
 </div>
 
-<div class="mt-8 text-xl max-w-2xl mx-auto opacity-80">
-  Sam Altman 想让全球开发者主动为 ChatGPT 网页开发 Function 工具
+<div class="mt-8 text-xl max-w-2xl mx-auto opacity-80" v-click>
+  Sam Altman 想让全球开发者主动为 ChatGPT 网页开发 Function Calling 工具
 </div>
 
-<div class="mt-8 font-bold text-3xl text-blue-500">
+<div class="mt-8 font-bold text-3xl text-red-500" v-click>
   于是 ChatGPT 插件登场了
 </div>

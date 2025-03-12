@@ -445,6 +445,6 @@ layout: statement
 </div>
 
 <div v-click class="mt-10 flex items-center justify-center">
-  <div class="text-5xl transform -rotate-12 font-bold text-green-500">MCP!</div>
+  <div class="text-5xl transform -rotate-12 font-bold text-orange-500">MCP!</div>
   <div class="ml-3 text-xl">模型上下文协议</div>
 </div>

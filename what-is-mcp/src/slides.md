@@ -24,5 +24,9 @@ src: ./pages/04-chatgpt-plugins.md
 ---
 
 ---
-src: ./pages/05-mcp-intro.md
+src: ./pages/05-mcp-into.md
+---
+
+---
+src: ./pages/06-mcp-usage.md
 ---

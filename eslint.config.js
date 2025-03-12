@@ -15,8 +15,8 @@ export default antfu(
       css: true,
       slidev: {
         files: [
-          'pages/**/*.md',
-          'parts/**/*.md',
+          '**/pages/**/*.md',
+          '**/parts/**/*.md',
           '**/slides.md',
         ],
       },
